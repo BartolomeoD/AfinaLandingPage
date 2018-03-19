@@ -1,3 +1,8 @@
 import FullPage from 'fullpage.js';
 
-Console.log("AUE");
+var $ = require("jquery");
+
+$(document).ready(function (e) {
+    console.log('asdasdas');
+	$('#full-page-wrapper').fullpage();
+})
