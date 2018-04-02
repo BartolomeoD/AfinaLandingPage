@@ -1,22 +1,21 @@
 @import 'jquery.fullpage.css';
 @import 'fontello.css';
-
 @font-face {
-    font-family: 'Helvetica Neue Cyr';   
+    font-family: 'Helvetica Neue Cyr';
     src: url('../fonts/HelveticaNeueCyr-Thin.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'PF Din Display pro light';   
+    font-family: 'PF Din Display pro light';
     src: url('../fonts/pfdindisplaypro-light.ttf');
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'PF Din Display pro';   
+    font-family: 'PF Din Display pro';
     src: url('../fonts/pfdindisplaypro-reg.ttf');
     font-weight: normal;
     font-style: normal;
@@ -28,7 +27,8 @@
 }
 
 ul {
-    list-style: none;;
+    list-style: none;
+    ;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
     -webkit-margin-start: 0px;
@@ -43,13 +43,18 @@ a {
     text-decoration: none
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
 }
+
 p {
-    font-family: 'PF Din Display pro light'; 
+    font-family: 'PF Din Display pro light';
 }
+
 body {
     margin: 0;
     font-family: 'Yeseva One', cursive;
@@ -68,14 +73,15 @@ body {
     bottom: 0;
     height: 100%;
     z-index: -1;
-        .container {
-            display: flex;
-            height: 100%;
-            border-left: 1px solid #eff0f4;
-            > div {
+    .container {
+        display: flex;
+        height: 100%;
+        border-left: 1px solid #eff0f4;
+        >div {
             width: 25%;
             border-right: 1px solid #eff0f4;
-            min-height: 100%;;
+            min-height: 100%;
+            ;
         }
     }
 }
@@ -83,25 +89,23 @@ body {
 .menu {
     height: 16vh;
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     z-index: 2;
     .container {
         height: 100%;
-        padding: 0  1.4rem;
+        padding: 0 1.4rem;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
     }
-
     .nav {
         width: calc(93.4vw / 2);
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         .round-button {
             margin-left: 1.6rem;
         }
@@ -119,7 +123,61 @@ body {
     }
 }
 
-#scroll-nav li, .line {
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 14vh;
+    z-index: 2;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .line {
+        margin: 0 2.4rem;
+    }
+    .wrapper {
+        display: flex;
+        align-items: center;
+        width: 25rem;
+    }
+    .right {
+        justify-content: flex-end;
+        font-size: 1.25rem;
+        .line {
+            margin-left: 3.9rem;
+        }
+    }
+    .left .line {
+        margin-right: 4.2rem;
+    }
+    .social {
+        font-size: 1.6rem;
+    }
+    .bottom-button {
+        cursor: pointer;
+        background-image: url(../img/bottom-button.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 4rem;
+        width: 2.7rem;
+        background-color: white;
+        border-radius: 1.35rem;
+        -webkit-box-shadow: -1px 5px 4px 0px rgba(222, 222, 222, 1);
+        -moz-box-shadow: -1px 5px 4px 0px rgba(222, 222, 222, 1);
+        box-shadow: -1px 5px 4px 0px rgba(222, 222, 222, 1);
+        transition: 1s;
+        transition-timing-function: ease;
+    }
+    .bottom-button:hover {
+        transform: translateY(-1rem);
+    }
+}
+
+#scroll-nav li,
+.line {
     display: block;
     width: 30px;
     height: 0;
@@ -146,7 +204,7 @@ body {
     position: absolute;
     z-index: 2;
     list-style: none;
-    margin-left: 40px;
+    margin-left: 2.5rem;
     li.active {
         border-color: rgba($color: #cbaf8a, $alpha: 0);
         a {
@@ -169,7 +227,6 @@ body {
             background-image: url(../img/round-button.png);
         }
     }
-
     .slide-name-wrapper {
         margin-bottom: 5rem;
         height: 5rem;
@@ -177,13 +234,12 @@ body {
         align-items: center;
         justify-content: center;
     }
-
     .slide-name {
         white-space: nowrap;
         text-transform: uppercase;
         font-size: 1.2rem;
-        -webkit-writing-mode: vertical-rl; 
-        writing-mode:tb-rl;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: tb-rl;
         color: #cbaf8a;
         font-family: 'PF Din Display pro';
     }
@@ -222,7 +278,6 @@ body {
             font-size: 3.5rem;
             line-height: .8;
         }
-
         .small {
             display: block;
             font-family: 'Helvetica Neue Cyr';
@@ -255,7 +310,6 @@ p {
             width: 25rem;
         }
     }
-
     .right {
         margin-top: 7rem;
         margin-right: 8rem;
@@ -276,13 +330,11 @@ p {
                 justify-content: space-between;
                 align-items: center;
             }
-
             width: 25.2rem;
             margin:0;
             margin-left: 1.5rem;
             font-size: 1.2rem;
         }
-
         .icon-right {
             color: #cbaf8a;
         }
@@ -293,7 +345,7 @@ p {
     .grey {
         position: absolute;
         left: 50%;
-        top: 0; 
+        top: 0;
         right: 0;
         height: 82.5vh;
         background-color: #eff0f4;
@@ -304,7 +356,6 @@ p {
             color: white;
             font-size: 14.5rem;
         }
-
         .agency {
             position: absolute;
             top: 10.9rem;
@@ -312,7 +363,6 @@ p {
             font-size: 3rem;
             color: white;
         }
-
         img {
             position: absolute;
             left: 0;
@@ -352,14 +402,14 @@ p {
     border-radius: 50%;
 }
 
-#slide2 .photo-wrapper {
+#slide2 .photo-wrapper, #slide5 .photo-wrapper  {
     padding-left: 1.3rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     background-color: #cbaf8a;
-    -webkit-box-shadow: 0px 0px 18px 0px rgba(143,139,143,1);
-    -moz-box-shadow: 0px 0px 18px 0px rgba(143,139,143,1);
-    box-shadow: 0px 0px 18px 0px rgba(143,139,143,1);
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(143, 139, 143, 1);
+    -moz-box-shadow: 0px 0px 18px 0px rgba(143, 139, 143, 1);
+    box-shadow: 0px 0px 18px 0px rgba(143, 139, 143, 1);
     p {
         margin: 0;
     }
@@ -367,11 +417,9 @@ p {
         background-color: white;
         padding: 0.5rem 0.6rem;
     }
-
     .name {
         font-family: 'Yeseva One', cursive;
     }
-
     .photo {
         width: 25rem;
         height: 31.25rem;
@@ -390,7 +438,8 @@ p {
     .center {
         margin-top: -6rem;
     }
-    .parent-list, .child-list {
+    .parent-list,
+    .child-list {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -416,19 +465,18 @@ p {
             margin-bottom: .8rem;
             border-radius: 1.6125rem;
             background-color: white;
-            -webkit-box-shadow: 0px 4px 5px 0px rgba(199,199,199,1);
-            -moz-box-shadow: 0px 4px 5px 0px rgba(199,199,199,1);
-            box-shadow: 0px 4px 5px 0px rgba(199,199,199,1);
+            -webkit-box-shadow: 0px 4px 5px 0px rgba(199, 199, 199, 1);
+            -moz-box-shadow: 0px 4px 5px 0px rgba(199, 199, 199, 1);
+            box-shadow: 0px 4px 5px 0px rgba(199, 199, 199, 1);
         }
         .item.active {
             background: #cbaf8a;
             color: white;
         }
     }
-    .child-list.active{
+    .child-list.active {
         display: flex;
     }
-
     .child-list {
         display: none;
         .item {
@@ -443,14 +491,13 @@ p {
                 padding: 1.25rem 1rem;
                 margin-right: -1.4rem;
             }
-
             .numb {
                 left: 0;
                 top: 1rem;
                 transform: rotate(90deg);
                 position: absolute;
                 font-size: 4.8rem;
-                color: rgba(255,255,255,.5);
+                color: rgba(255, 255, 255, .5);
             }
         }
     }
@@ -458,16 +505,15 @@ p {
 
 #slide4 {
     h2 {
-    margin-bottom: 2rem;
+        margin-bottom: 2rem;
     }
     p {
         margin: 0;
     }
-
-    .left, .right {
+    .left,
+    .right {
         margin-top: - 7rem;
     }
-
     .left {
         .list .item {
             display: flex;
@@ -475,7 +521,7 @@ p {
             align-items: flex-start;
             margin-bottom: 1rem;
             .numb {
-                font-family: 'PF Din Display pro'; 
+                font-family: 'PF Din Display pro';
                 font-weight: bold;
                 color: white;
                 font-size: 1.2rem;
@@ -499,7 +545,6 @@ p {
             }
         }
     }
-
     .right {
         display: block;
         .card-wrapper {
@@ -512,19 +557,16 @@ p {
                 transform: rotate(90deg);
                 position: absolute;
                 font-size: 6.3rem;
-                color: hsla(0,0%,100%,.5);
+                color: hsla(0, 0%, 100%, .5);
             }
-
             .text {
                 background: white;
                 font-size: 1.25rem;
                 padding: 1.2rem 1.8rem;
-
                 h5 {
                     font-size: 1.25rem;
-                    margin: 1rem 0; 
+                    margin: 1rem 0;
                 }
-
                 p {
                     margin: 1rem 0;
                 }
@@ -534,6 +576,48 @@ p {
 }
 
 #slide5 {
+    a {
+        text-decoration: underline;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    p {
+        margin-top: 1.3rem;
+        margin-bottom: 0.5rem;
+        font-family: 'Yeseva One', cursive;
+    }
+    ul {
+        max-width: 30rem;
+        font-size: 1.25rem;
+        font-family: 'PF Din Display pro light';
+        padding-left: 2rem;
+        list-style: square;
+        li {
+            margin-top: 0.2rem;
+        }
+    }
+    .right {
+        margin: 0;
+        margin-right: 8rem;
+    }
+    .fp-tableCell {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .content-wrapper {
+        .photo {
+        width: 39rem;
+        height: 29.25rem;
+        background-image: url('../img/trends2020.jpg');
+        margin: 0;
+        }
+    }
+}
+
+#slide6 {
     h2 {
         margin-bottom: 2.2rem;
     }
@@ -546,18 +630,16 @@ p {
             margin-left: -16.625rem;
         }
     }
-
     .left .wrapper {
-        display:flex;
+        display: flex;
         font-size: 1.25rem;
         padding: 1.3rem 1.4rem;
         margin-bottom: 1rem;
         background: white;
-        -webkit-box-shadow: 0px 4px 5px 0px rgba(199,199,199,1);
-            -moz-box-shadow: 0px 4px 5px 0px rgba(199,199,199,1);
-            box-shadow: 0px 4px 5px 0px rgba(199,199,199,1);
+        -webkit-box-shadow: 0px 4px 5px 0px rgba(199, 199, 199, 1);
+        -moz-box-shadow: 0px 4px 5px 0px rgba(199, 199, 199, 1);
+        box-shadow: 0px 4px 5px 0px rgba(199, 199, 199, 1);
     }
-
     .icon {
         width: 2.2rem;
     }
@@ -569,10 +651,37 @@ p {
         font-family: 'PF Din Display pro';
     }
 }
+
+.fp-section {
+    display: flex;
+    align-items: center;
+}
+
+.fp-prev {
+    display: none;
+}
+.fp-next {
+    display: block;
+    background: white;
+    font-size: 1.25rem;
+    color: #c9ae89;
+    border: none;
+    height: 3.8rem;
+    width: 3.8rem;
+    line-height: 3.8rem;
+    text-align: center;
+    border-radius: 50%; 
+    right: 2rem!important;
+    -webkit-box-shadow: -1px 5px 4px 0px rgba(222, 222, 222, 1);
+    -moz-box-shadow: -1px 5px 4px 0px rgba(222, 222, 222, 1);
+    box-shadow: -1px 5px 4px 0px rgba(222, 222, 222, 1);
+}
+
 #map {
     height: 100%;
     width: 100%;
 }
+
 @media (max-width: 1800px) {
     html {
         font-size: 11px;
