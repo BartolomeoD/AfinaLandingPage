@@ -13395,7 +13395,7 @@ $(document).ready(function (e) {
     });
     $('#full-page-wrapper').fullpage({
         menu: '#scroll-nav',
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage'],
         onLeave: function onLeave(anchorLink, index) {
             $('#scroll-nav .slide-name').fadeOut(300);
         },

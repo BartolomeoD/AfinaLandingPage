@@ -25,7 +25,9 @@
 * {
     box-sizing: border-box;
 }
-
+.img {
+    background-repeat: no-repeat;
+}
 ul {
     list-style: none;
     ;
@@ -402,7 +404,14 @@ p {
     border-radius: 50%;
 }
 
-#slide2 .photo-wrapper, #slide5 .photo-wrapper  {
+#slide2 {
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+#slide2 .photo-wrapper,
+#slide5 .photo-wrapper {
     padding-left: 1.3rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
@@ -509,10 +518,7 @@ p {
     }
     p {
         margin: 0;
-    }
-    .left,
-    .right {
-        margin-top: - 7rem;
+        font-size: 1.4rem;
     }
     .left {
         .list .item {
@@ -613,17 +619,60 @@ p {
     iframe {
         display: block;
     }
-    .content-wrapper {
+    .trends .content-wrapper {
         .photo {
-        width: 39rem;
-        height: 29.25rem;
-        background-image: url('../img/trends2020.jpg');
-        margin: 0;
+            width: 39rem;
+            height: 29.25rem;
+            background-image: url('../img/trends2020.jpg');
+            margin: 0;
+        }
+    }
+    .pfk {
+        .photo {
+            width: 39rem;
+            height: 37.25rem;
+            background-image: url('../img/pfk.png');
+            margin: 0;
         }
     }
 }
 
 #slide6 {
+    p {
+        font-size: 1.4rem;
+    }
+    .s {
+        font-size: 1.2rem;
+        color: #909090;
+        font-style: oblique;
+    }
+    .right {
+        .photo {
+            background-image: url(../img/mockup.png);
+            background-size: contain;
+            height: 29rem;
+            width: 33rem;
+        }
+    }
+    button {
+        margin-top: 1rem;
+        padding: 0;
+        outline: none;
+        font-family: 'Yeseva One', cursive;
+        cursor: pointer;
+    }
+    .text-input {
+        border:none;
+        border-bottom: 3px solid #e8dac4; 
+        height: 3.5rem;
+        font-size: 1.5rem;
+        padding: 0.8rem;
+        outline: none;
+    }
+}
+
+#slide7 {
+    
     h2 {
         margin-bottom: 2.2rem;
     }
@@ -666,6 +715,7 @@ p {
 .fp-prev {
     display: none;
 }
+
 .fp-next {
     display: block;
     background: white;
@@ -676,8 +726,8 @@ p {
     width: 3.8rem;
     line-height: 3.8rem;
     text-align: center;
-    border-radius: 50%; 
-    right: 2rem!important;
+    border-radius: 50%;
+    right: 2rem !important;
     -webkit-box-shadow: -1px 5px 4px 0px rgba(222, 222, 222, 1);
     -moz-box-shadow: -1px 5px 4px 0px rgba(222, 222, 222, 1);
     box-shadow: -1px 5px 4px 0px rgba(222, 222, 222, 1);
