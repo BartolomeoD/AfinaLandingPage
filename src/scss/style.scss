@@ -25,9 +25,11 @@
 * {
     box-sizing: border-box;
 }
+
 .img {
     background-repeat: no-repeat;
 }
+
 ul {
     list-style: none;
     ;
@@ -443,139 +445,85 @@ p {
     }
     h2 {
         margin-bottom: 2rem;
+        span {
+            font-size: 1.5rem;
+        }
     }
     .center {
-        margin-top: -6rem;
+        width: 100%;
     }
-    .parent-list,
-    .child-list {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
+    .texts-wrapper {
         align-items: flex-start;
-    }
-    .lists-wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
-        height: 20rem;
+        width: 100%;
     }
-    .parent-list {
-        min-width: 30rem;
-        width: 30rem;
-        margin-right: 2rem;
-        .item {
-            width: 14.4rem;
-            height: 3.25rem;
-            line-height: 3.25rem;
-            padding: 0 1rem;
-            font-family: 'PF Din Display pro';
-            font-size: 1.15rem;
-            margin-bottom: .8rem;
-            border-radius: 1.6125rem;
-            background-color: white;
-            -webkit-box-shadow: 0px 4px 5px 0px rgba(199, 199, 199, 1);
-            -moz-box-shadow: 0px 4px 5px 0px rgba(199, 199, 199, 1);
-            box-shadow: 0px 4px 5px 0px rgba(199, 199, 199, 1);
-        }
-        .item.active {
-            background: #cbaf8a;
-            color: white;
-        }
+    .left p {
+        font-size: 1.3rem;
+        width: 40rem;
     }
-    .child-list.active {
-        display: flex;
+    .right {
+        margin-top: 0;
+        display: block;
     }
-    .child-list {
-        display: none;
-        .item {
-            position: relative;
-            background: #cbaf8a;
-            padding: 1rem 0 1rem 3.8rem;
-            width: 18.25rem;
-            margin-bottom: 1rem;
-            .text {
-                font-size: 1.25rem;
-                background: white;
-                padding: 1.25rem 1rem;
-                margin-right: -1.4rem;
-            }
-            .numb {
-                left: 0;
-                top: 1rem;
-                transform: rotate(90deg);
-                position: absolute;
-                font-size: 4.8rem;
-                color: rgba(255, 255, 255, .5);
-            }
+    .right ul {
+        width: 26.2rem;
+        font-family: 'PF Din Display pro light';
+        list-style: square;
+        margin-left: 0;
+        padding-left: 1.5rem;
+        li {
+            display: list-item;
+            margin-bottom: .4rem;
         }
     }
 }
 
 #slide4 {
+    .content-wrapper {
+        display: block;
+    }
     h2 {
         margin-bottom: 2rem;
     }
     p {
         margin: 0;
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
-    .left {
-        .list .item {
+    .list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: wrap;
+        .item {
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            margin-bottom: 1rem;
+            margin-top: 6rem;
+            margin-right: 5rem;;
+            max-width: 40rem;
             .numb {
                 font-family: 'PF Din Display pro';
                 font-weight: bold;
                 color: white;
-                font-size: 1.2rem;
-                width: 2.1rem;
-                height: 2.1rem;
+                font-size: 1.7rem;
+                min-width: 2.6rem;
+                min-height: 2.6rem;
                 background-color: #cbaf8a;
-                border-radius: 2.1rem;
-                line-height: 2.1rem;
+                border-radius: 2.6rem;
+                line-height: 2.6rem;
                 text-align: center;
                 margin-right: 1.5rem;
-                margin-top: -0.5rem;
+                margin-top: -0.7rem;
             }
             .text {
-                font-size: 1.2rem;
+                font-size: 1.7rem;
             }
             .h {
                 font-family: 'Yeseva One', cursive;
             }
             .l {
                 font-weight: lighter;
-            }
-        }
-    }
-    .right {
-        display: block;
-        .card-wrapper {
-            background-color: #cbaf8a;
-            padding: 0.5rem 1rem 0.5rem 5rem;
-            position: relative;
-            .numb {
-                left: 0;
-                top: 1rem;
-                transform: rotate(90deg);
-                position: absolute;
-                font-size: 6.3rem;
-                color: hsla(0, 0%, 100%, .5);
-            }
-            .text {
-                background: white;
-                font-size: 1.25rem;
-                padding: 1.2rem 1.8rem;
-                h5 {
-                    font-size: 1.25rem;
-                    margin: 1rem 0;
-                }
-                p {
-                    margin: 1rem 0;
-                }
             }
         }
     }
@@ -662,8 +610,8 @@ p {
         cursor: pointer;
     }
     .text-input {
-        border:none;
-        border-bottom: 3px solid #e8dac4; 
+        border: none;
+        border-bottom: 3px solid #e8dac4;
         height: 3.5rem;
         font-size: 1.5rem;
         padding: 0.8rem;
@@ -672,7 +620,6 @@ p {
 }
 
 #slide7 {
-    
     h2 {
         margin-bottom: 2.2rem;
     }
