@@ -588,7 +588,7 @@ p {
         font-family: 'Yeseva One', cursive;
     }
     ul {
-        max-width: 30rem;
+        max-width: 40rem;
         font-size: 1.25rem;
         font-family: 'PF Din Display pro light';
         padding-left: 2rem;
@@ -606,6 +606,12 @@ p {
         align-items: center;
         justify-content: space-between;
         height: 100%;
+    }
+    .no-border {
+        padding: 0;
+    }
+    iframe {
+        display: block;
     }
     .content-wrapper {
         .photo {
