@@ -13405,13 +13405,25 @@ $(document).ready(function (e) {
             var name = $('#' + anchorLink + '-menu-title').attr('data-rus-name');
             $('#scroll-nav .slide-name').html(name);
             $('#scroll-nav .slide-name').fadeIn(300);
+            console.log(index);
+            if (index == 1) {
+                $(".bottom-button").removeClass("rotate");
+            }
+
+            if (index == 7) {
+                $(".bottom-button").addClass("rotate");
+            }
         }
     });
 
     $(".fp-tableCell").css('height', '100%');
     $('.fp-next').html("<i class='icon-right'></i>");
     $('.footer .bottom-button').click(function () {
-        $.fn.fullpage.moveSectionDown();
+        if ($(this).hasClass("rotate")) {
+            $.fn.fullpage.moveSectionUp();
+        } else {
+            $.fn.fullpage.moveSectionDown();
+        }
     });
 
     $(".call-me").click(function (e) {

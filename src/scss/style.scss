@@ -178,8 +178,18 @@ body {
         transition: 1s;
         transition-timing-function: ease;
     }
+    .bottom-button.rotate {
+        transform: rotate(-180deg);
+        -webkit-box-shadow: -1px -5px 4px 0px rgba(222, 222, 222, 1);
+        -moz-box-shadow: -1px -5px 4px 0px rgba(222, 222, 222, 1);
+        box-shadow: -1px -5px 4px 0px rgba(222, 222, 222, 1);
+    }
     .bottom-button:hover {
         transform: translateY(-1rem);
+    }
+
+    .bottom-button.rotate:hover {
+        transform: rotate(-180deg) translateY(1rem);
     }
 }
 
