@@ -1,0 +1,11 @@
+
+.icon-phone:before { content: '\e800'; } /* '' */
+.icon-location:before { content: '\e801'; } /* '' */
+.icon-user:before { content: '\e802'; } /* '' */
+.icon-cancel:before { content: '\e803'; } /* '' */
+.icon-spin1:before { content: '\e830'; } /* '' */
+.icon-mail-alt:before { content: '\f0e0'; } /* '' */
+.icon-doc-text:before { content: '\f0f6'; } /* '' */
+.icon-right:before { content: '\f178'; } /* '' */
+.icon-vkontakte:before { content: '\f189'; } /* '' */
+.icon-file-pdf:before { content: '\f1c1'; } /* '' */
